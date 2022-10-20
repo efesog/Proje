@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-image: url(BG.jpg);
+    background-size: cover;
+}
+a{
+    color: ghostwhite;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+header{
+height: 100px;
+border-bottom: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav .logo a {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 20px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    column-gap: 30px;
+}
+nav ul a{
+    color: whitesmoke;
+    text-decoration: none;
+    transition: color .25s ease;
+}
+nav ul a:hover{
+    color: darkorange;
+}
+nav .menu{
+    display: flex;
+    align-items: center;
+    column-gap: 48px;
+}
+nav .menu .menu-button{
+    color: aqua;
+    text-decoration: none;
+    background-color: gold;
+    padding: 12px 24px;
+    border-radius: 56px;
+    transition: all .25s ease;
+}
+nav .menu .menu-button:hover {
+background-color: chartreuse;
+color: aliceblue;
+}
+.menu ul{
+    column-gap: 20px;
+}
+
+@media(max-width:576px) {
+    .container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+}
+.content{
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+}
+.content h1{
+    font-size: 60px;
+    text-align: center;
+}
+.content p{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+}
+.content .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+.content .links a {
+    background-color: aliceblue;
+    padding: 20px;
+    width: 280px;
+    color: blue;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .25s ease-in;
+}
+.content .links a:hover{
+    background-color: blue;
+    color: aliceblue;
+}
+.content{
+    padding-top: 50px;
+}
+.content h1 {
+    padding-top: 35px;
+}
+.content p {
+    padding-top: 15px;
+}
+.content .links {
+    flex-direction: row;
+}
+.content .links a{
+    padding: 14px;
+    width: 90%;
+}
